@@ -122,6 +122,7 @@ public class OwnerRestController {
 		currentOwner.setFirstName(owner.getFirstName());
 		currentOwner.setLastName(owner.getLastName());
 		currentOwner.setTelephone(owner.getTelephone());
+		currentOwner.setStatus(owner.getStatus());
 		this.clinicService.saveOwner(currentOwner);
 		return new ResponseEntity<Owner>(currentOwner, HttpStatus.NO_CONTENT);
 	}
